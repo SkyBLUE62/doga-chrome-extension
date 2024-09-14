@@ -18,9 +18,6 @@ Prérequis
 
 *   **Google Chrome** ou un navigateur basé sur Chromium (Brave, Edge, etc.).
     
-*   **Compte Twitch** pour utiliser l'API Twitch (Client-ID et Token d'accès).
-    
-
 Installation
 ------------
 
@@ -50,28 +47,6 @@ Assurez-vous que vous avez les fichiers nécessaires dans un seul dossier. Vous 
     
 2.  Sélectionnez le dossier contenant les fichiers de l'extension.
     
-
-### Étape 4 : Configuration
-
-1.  **Obtenez vos identifiants Twitch** :
-    
-    *   Vous aurez besoin d'un Client-ID et d'un Token d'accès pour l'API Twitch.
-        
-    *   Vous pouvez obtenir ces informations en créant une application sur Twitch Developer Console.
-        
-2.  **Modifier le Fichier background.js** :
-    
-    *   Ouvrez background.js.
-        
-    *   Remplacez les valeurs des variables clientId et accessToken par vos propres identifiants Twitch.
-        
-3.  **Tester l'Extension** :
-    
-    *   Assurez-vous que l'extension est activée dans la page chrome://extensions/.
-        
-    *   La première vérification peut prendre jusqu'à 1 minute (selon l'intervalle configuré).
-        
-
 Débogage
 --------
 
