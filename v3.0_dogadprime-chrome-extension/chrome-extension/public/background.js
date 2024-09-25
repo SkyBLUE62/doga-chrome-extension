@@ -231,8 +231,15 @@ browser.notifications.onClicked.addListener(function (notificationId) {
 
 });
 
+chrome.alarms.onAlarm.addListener((alarm) => {
+    if (alarm.name === 'isOnlineCheck') {
+        isOnlineCheck();  // Vérifie l'état en ligne de Twitch
+    }
+    if (alarm.name === 'lastVideoCheck') {
+        lastVideoCheck(); // Vérifie les nouvelles vidéos YouTube
+    }
+});
 isOnlineCheck();
-setInterval(isOnlineCheck, 0.15 * 60 * 1000);
-
 lastVideoCheck();
-setInterval(lastVideoCheck, 1 * 60 * 1000);
+chrome.alarms.create('isOnlineCheck', { periodInMinutes: 0.15 });
+chrome.alarms.create('lastVideoCheck', { periodInMinutes: 1 });
