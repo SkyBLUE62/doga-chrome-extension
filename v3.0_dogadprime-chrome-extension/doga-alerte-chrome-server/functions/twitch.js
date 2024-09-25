@@ -3,7 +3,7 @@ dotenv.config();
 import { twitchCache } from '../cache/cache.js';
 import fetch from 'node-fetch';
 
-const streamerName = 'pooksc2';
+const streamerName = 'dogadprime';
 
 const clientId = process.env.TWITCH_CLIENT_ID;
 const accessToken = process.env.TWITCH_ACCESS_TOKEN;
